@@ -1,3 +1,6 @@
+import Header from "./layoutComponents/header/Header";
+import "./index.css";
+
 // src/app/layout.tsx
 export default function RootLayout({
   children,
@@ -7,21 +10,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header>
-          <nav>
-            <ul>
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/about">About</a>
-              </li>
-              <li>
-                <a href="/shop">Shop</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
 
         <main>
           {children} {/* Questo è il contenuto specifico di ogni pagina */}
